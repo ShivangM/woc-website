@@ -27,7 +27,7 @@ const Navbar = (props: Props) => {
   }, []);
 
   return (
-    <nav className="fixed left-[50%] -translate-x-[50%] z-50 flex items-center justify-between w-full backdrop-blur-sm bg-white/20 px-4 py-2 sm:absolute sm:w-11/12 sm:rounded-3xl sm:my-8 ">
+    <nav className="fixed left-[50%] -translate-x-[50%] z-50 flex items-center justify-between w-full backdrop-blur-sm bg-white/20 px-4 py-2 sm:w-11/12 sm:rounded-3xl sm:my-8 ">
       <Image
         className="w-10 sm:hidden"
         src="/assets/logo.png"

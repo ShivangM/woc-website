@@ -5,7 +5,7 @@ type Props = {};
 
 const HomeHero = (props: Props) => {
   return (
-    <main className="w-full h-96 sm:h-screen relative">
+    <main className="w-full h-96 sm:h-screen relative" id="home">
       <Image
         src="/assets/background/bgClean.png"
         alt="Home Background"
