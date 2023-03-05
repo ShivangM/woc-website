@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
         <h1 className="text-4xl">WOC 3.0</h1>
         <p className="text-xl">Brought to you by</p>
         <h2 className="text-2xl uppercase">
-          GOOGLE DEVELOPER STUDENT CLUB IIIT KALYANI
+          GOOGLE DEVELOPER STUDENT CLUB IIIT KALYANIw
         </h2>
       </div>
 

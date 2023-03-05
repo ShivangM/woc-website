@@ -26,7 +26,7 @@ const CommunityPatners = (props: Props) => {
       </motion.h1>
 
       <div className="p-10">
-        <div className="grid grid-cols-4 gap-4 h-96 px-8 overflow-y-auto">
+        <div className="grid grid-cols-4 gap-4 h-96 px-8 overflow-y-auto scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-slate-200">
           {Array.from(Array(40).keys()).map((i) => {
             return (
               <div
