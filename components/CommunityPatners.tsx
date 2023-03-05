@@ -5,7 +5,7 @@ type Props = {};
 
 const CommunityPatners = (props: Props) => {
   return (
-    <main className="w-full text-white h-screen relative p-10">
+    <main className="w-full text-white sm:h-screen relative py-10 sm:p-10">
       <Image
         src="/assets/background/CommunityPartner.gif"
         alt="Community Partner BG"
@@ -25,8 +25,8 @@ const CommunityPatners = (props: Props) => {
         Community Partners
       </motion.h1>
 
-      <div className="p-10">
-        <div className="grid grid-cols-4 gap-4 h-96 px-8 overflow-y-auto scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-slate-200">
+      <div className="py-10 sm:p-10">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 h-96 px-8 overflow-y-auto scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-slate-200">
           {Array.from(Array(40).keys()).map((i) => {
             return (
               <div

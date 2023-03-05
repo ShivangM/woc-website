@@ -47,11 +47,11 @@ const Timeline = (props: Props) => {
     };
 
     return (
-      <li className="relative">
+      <li className="relative flex space-x-6 sm:block sm:space-x-0">
         <div className="flex items-center">
           <div
             className={classNames(
-              'z-10 flex items-center justify-center w-10 h-10 bg-primary rounded-full ring-0 sm:ring-8 shrink-0',
+              'z-10 flex items-center justify-center w-10 h-10 bg-primary rounded-full ring-8 shrink-0',
               returnClass()
             )}
           >
@@ -78,11 +78,12 @@ const Timeline = (props: Props) => {
       </li>
     );
   };
+
   return (
-    <main className="w-full h-screen text-white relative px-10 sm:p-28">
+    <main className="w-full sm:h-screen text-white relative p-10 sm:p-28">
       <Image
         src="/assets/background/TimelineBG.gif"
-        className="absolute -z-10"
+        className="absolute -z-10 object-cover"
         alt="Timeline BG"
         fill
       />
@@ -97,7 +98,7 @@ const Timeline = (props: Props) => {
       >
         Timeline
       </motion.h1>
-      <ol className="items-center sm:grid grid-cols-4 gap-y-16 sm:py-28">
+      <ol className="items-center grid grid-cols-1 sm:grid-cols-4 gap-y-4 sm:gap-y-16 py-10 sm:py-28">
         {timelineData.map((data, key) => {
           return (
             <TimelineNode

@@ -8,7 +8,7 @@ type Props = {};
 const Patners = (props: Props) => {
   const { diamond, gold, platinum, silver } = sponsorsData;
   return (
-    <main className="w-full text-white h-[200vh] relative px-10 sm:p-40">
+    <main className="w-full text-white sm:h-[200vh] relative p-10 sm:p-40">
       <Image
         src="/assets/background/PatnerBG.gif"
         className="-z-20"
@@ -17,7 +17,7 @@ const Patners = (props: Props) => {
       />
       <Image
         src="/assets/background/elements.png"
-        className="-z-10"
+        className="-z-10 object-cover"
         alt="Patners BG"
         fill
       />
@@ -34,7 +34,7 @@ const Patners = (props: Props) => {
         Our Partners
       </motion.h1>
 
-      <div className="py-28">
+      <div className="py-10 sm:py-28">
         <motion.h3
           whileInView={{ y: [50, 0] }}
           transition={{
@@ -64,7 +64,7 @@ const Patners = (props: Props) => {
               PLATINUM SPONSORS
             </h3>
 
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly flex-wrap space-y-8 py-10 sm:space-y-0 sm:py-0 sm:flex-nowrap">
               {platinum.map((sponsor, idx) => {
                 const { image, link, title } = sponsor;
                 return (
@@ -83,7 +83,7 @@ const Patners = (props: Props) => {
               Diamond Sponsor
             </h3>
 
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly flex-wrap space-y-8 py-10 sm:space-y-0 sm:py-0 sm:flex-nowrap">
               {diamond.map((sponsor, idx) => {
                 const { image, link, title } = sponsor;
                 return (
@@ -102,7 +102,7 @@ const Patners = (props: Props) => {
               Gold Sponsor
             </h3>
 
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly flex-wrap space-y-8 py-10 sm:space-y-0 sm:py-0 sm:flex-nowrap">
               {gold.map((sponsor, idx) => {
                 const { image, link, title } = sponsor;
                 return (
@@ -121,7 +121,7 @@ const Patners = (props: Props) => {
               SILVER PARTNERS
             </h3>
 
-            <div className="flex items-center justify-evenly">
+            <div className="flex items-center justify-evenly flex-wrap space-y-8 py-10 sm:space-y-0 sm:py-0 sm:flex-nowrap">
               {silver.map((sponsor, idx) => {
                 const { image, link, title } = sponsor;
                 return (

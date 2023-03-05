@@ -8,16 +8,16 @@ type Props = {};
 
 const Organizations = (props: Props) => {
   return (
-    <main className="w-full h-screen flex relative px-10">
+    <main className="w-full sm:h-screen flex relative px-10 py-20">
       <Image
         src="/assets/background/OrganizationBG.gif"
-        className="-z-10"
+        className="-z-10 block"
         alt="Organizations BG"
         fill
       />
 
-      <div className="flex w-full text-white justify-between">
-        <div className="w-1/2 flex flex-col space-y-10 items-center justify-center">
+      <div className="flex w-full text-white justify-center sm:justify-between">
+        <div className="sm:w-1/2 flex flex-col space-y-10 items-center justify-center">
           <motion.h1
             whileInView={{ y: [50, 0] }}
             transition={{
@@ -30,8 +30,8 @@ const Organizations = (props: Props) => {
             Organizations
           </motion.h1>
 
-          <div className="font-semibold text-xl px-10 space-x-2">
-            <span>
+          <div className="font-semibold text-xl sm:px-10 space-x-2 text-center sm:text-left">
+            <span className="">
               Our love for Open Source drove us to impact the community through
               Winter of Code 3.0.
             </span>
@@ -45,7 +45,7 @@ const Organizations = (props: Props) => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-4 gap-y-8 gap-x-16">
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-y-8 gap-x-16">
             {organizations.map((organization, idx) => {
               const { name, image } = organization;
               return (
@@ -66,7 +66,7 @@ const Organizations = (props: Props) => {
             })}
           </div>
         </div>
-        <div className="w-1/2 flex flex-col items-center justify-center">
+        <div className="w-1/2 flex-col items-center justify-center hidden sm:flex">
           <Image
             src="/assets/creatures/fish.png"
             alt="Fish"

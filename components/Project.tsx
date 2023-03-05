@@ -8,7 +8,7 @@ type Props = {};
 const Project = (props: Props) => {
   const navigate = useRouter();
   return (
-    <main className="w-full h-screen relative">
+    <main className="w-full sm:h-screen relative">
       <Image
         src="/assets/background/ProjectBG.gif"
         className="-z-10"
@@ -16,7 +16,7 @@ const Project = (props: Props) => {
         fill
       />
       <div className="flex items-center">
-        <div className="w-1/2 relative h-screen justify-between items-center flex">
+        <div className="w-1/2 relative h-screen justify-between items-center hidden sm:flex">
           <div className="grid grid-cols-3 gap-4 w-3/4 -skew-y-12">
             {Array.from(Array(9).keys()).map((val) => {
               return (
@@ -43,7 +43,7 @@ const Project = (props: Props) => {
             })}
           </div>
         </div>
-        <div className="w-1/2 text-right space-y-16 px-16 h-screen justify-center items-end flex flex-col text-white">
+        <div className="sm:w-1/2 text-center sm:text-right space-y-16 px-10 sm:px-16 h-screen items-center justify-center sm:items-end flex flex-col text-white">
           <h1 className="heading">Projects</h1>
           <p>
             WoC is primarily a mentoring initiative. The Projects on offer have

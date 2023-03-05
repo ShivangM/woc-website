@@ -6,12 +6,12 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <main className="w-full h-screen relative px-10 sm:p-40">
+    <main className="w-full sm:h-screen relative p-10 sm:p-40">
       <Image
         src="/assets/background/bgClean2.png"
         alt="Home Background 2"
         fill
-        className="absolute -z-10 left-0 top-0"
+        className="absolute -z-10 left-0 top-0 hidden sm:block"
       />
 
       <Image
@@ -19,9 +19,10 @@ const About = (props: Props) => {
         alt="Wave"
         width={1920}
         height={1440}
-        className="absolute z-20 left-0 opacity-80 -bottom-20"
+        className="absolute z-20 left-0 opacity-80 -bottom-20 hidden sm:block"
       />
-      <div className="flex flex-col justify-center absolute z-30 text-white space-y-8 sm:space-y-20">
+
+      <div className="flex flex-col justify-center sm:absolute z-30 text-white space-y-8 sm:space-y-20">
         <motion.h1
           whileInView={{ y: [50, 0] }}
           transition={{

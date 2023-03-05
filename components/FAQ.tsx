@@ -25,21 +25,21 @@ const FAQ = (props: Props) => {
   };
 
   return (
-    <main className="w-full h-screen relative text-white p-10 px-20">
+    <main className="w-full sm:h-screen relative text-white p-10 sm:px-20">
       <Image
         src="/assets/background/FAQ.gif"
-        className="-z-10"
+        className="-z-10 object-cover"
         alt="FAQ BG"
         fill
       />
 
-      <div className="flex justify-between items-center">
-        <div className="w-1/2 flex flex-col h-screen">
+      <div className="flex flex-col sm:flex-row justify-between items-center">
+        <div className="sm:w-1/2 flex flex-col sm:h-screen">
           <h1 className="heading">Frequently</h1>
-          <h3 className="text-5xl">Asked Questions</h3>
+          <h3 className="text-2xl sm:text-5xl">Asked Questions</h3>
         </div>
 
-        <div className="w-1/2 flex flex-col h-screen">
+        <div className="sm:w-1/2 flex flex-col sm:h-screen py-10 sm:py-0">
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
             {faqData.map((faq, idx) => {
               return <FAQCard faq={faq} key={idx} />;
